@@ -13,11 +13,12 @@ namespace POOT_GuiaDeEjercicios_Ejercicio2
         protected int ruedas;
         protected double fuerzamotor;
 
-        //Definimos el método virtual de conversion 
-        /*public virtual decimal Gastomotor(decimal motor)
+        //Definimos el método virtual para calcular cuantos galones de gasolina consumira un vehiculo
+         public virtual void Calculoconsumo()
         {
-            return;
-        }*/
+            
+        }
+
 
     }
 }

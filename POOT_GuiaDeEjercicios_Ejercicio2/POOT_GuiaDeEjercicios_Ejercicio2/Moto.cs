@@ -9,13 +9,18 @@ namespace POOT_GuiaDeEjercicios_Ejercicio2
     class Moto : Vehiculo
     {
 
+        //Definimos 2 variables propias de la clase Moto
+        private double gastodfiario;
+        private double kmrecorridos;
 
-        /*public override void ConversionFuerzaMotor()
+        //Re escribimos el metodo virtual para calcular el consumo de galosnes, en este caso de una moto
+
+        public override void Calculoconsumo()
         {
+            gastodfiario = (0.0044 * kmrecorridos);
             
-        }*/
-
-
+            
+        }
 
         public int Ruedas
         {

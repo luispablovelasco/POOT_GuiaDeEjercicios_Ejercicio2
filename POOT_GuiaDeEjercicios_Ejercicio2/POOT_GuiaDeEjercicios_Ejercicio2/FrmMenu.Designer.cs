@@ -50,6 +50,7 @@
             this.btngobus.TabIndex = 1;
             this.btngobus.Text = "Bus";
             this.btngobus.UseVisualStyleBackColor = true;
+            this.btngobus.Click += new System.EventHandler(this.btngobus_Click);
             // 
             // btngomoto
             // 
@@ -60,6 +61,7 @@
             this.btngomoto.TabIndex = 2;
             this.btngomoto.Text = "Moto";
             this.btngomoto.UseVisualStyleBackColor = true;
+            this.btngomoto.Click += new System.EventHandler(this.btngomoto_Click);
             // 
             // btngocarro
             // 
@@ -70,6 +72,7 @@
             this.btngocarro.TabIndex = 3;
             this.btngocarro.Text = "Carro";
             this.btngocarro.UseVisualStyleBackColor = true;
+            this.btngocarro.Click += new System.EventHandler(this.btngocarro_Click);
             // 
             // label1
             // 
