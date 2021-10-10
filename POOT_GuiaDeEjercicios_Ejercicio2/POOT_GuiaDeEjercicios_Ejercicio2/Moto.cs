@@ -10,29 +10,36 @@ namespace POOT_GuiaDeEjercicios_Ejercicio2
     {
 
         //Definimos 2 variables propias de la clase Moto
-        private double gastodfiario;
-        private double kmrecorridos;
+        private double masaMoto;
+        private double coeficienteGastoMoto = 0.1; // Galon/Kilometro;
 
-        //Re escribimos el metodo virtual para calcular el consumo de galosnes, en este caso de una moto
 
-        public override void Calculoconsumo()
+        //Metodos virtuales reescritos
+        //Reescribimos el metodo virtual para calcular el gasto de gasolina, en este caso de una moto
+        public override void GastoGasolina()
         {
-            gastodfiario = (0.0044 * kmrecorridos);
-            
-            
+            double result;
+            result = Distancia * coeficienteGastoMoto;
         }
 
-        public int Ruedas
+        //Reescribimos el metodo virtual para calcular el pese, en este caso de una moto;
+        public override void PesoVehiculo()
         {
-            get { return ruedas; }
-            set { ruedas = value; }
+            double result;
+            result = Gravedad * masaMoto;
         }
 
-        public double Fuerzamotor
+        //Definimos las propiedades para acceder a las variable de la Clase vehiculo
+        public double Distancia
         {
-            get { return fuerzamotor; }
-            set { fuerzamotor = value; }
+            get { return distancia; }
+            set { distancia = value; }
         }
 
+        public double Gravedad
+        {
+            get { return gravedad; }
+            set { gravedad = value; }
+        }
     }
 }

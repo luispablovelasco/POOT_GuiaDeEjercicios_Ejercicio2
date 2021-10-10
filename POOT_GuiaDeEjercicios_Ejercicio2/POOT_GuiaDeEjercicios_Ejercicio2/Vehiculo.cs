@@ -10,14 +10,30 @@ namespace POOT_GuiaDeEjercicios_Ejercicio2
     {
         //Definimos 2 campos de acceso portegido que almacenarán datos comunes para las demas clases
 
-        protected int ruedas;
-        protected double fuerzamotor;
+        protected double distancia;
+        protected double gravedad = 9.8; //  Km/Segundocuadrado
 
-        //Definimos el método virtual para calcular cuantos galones de gasolina consumira un vehiculo
-         public virtual void Calculoconsumo()
+        //Metodos virtuales
+        //Definimos el método virtual para calcular Gasto de Gasolina de cada vehiculo
+         public virtual void GastoGasolina()
         {
             
         }
+
+        public virtual void PesoVehiculo()
+        {
+
+        }
+
+
+        //Definimos el metodo virtual para calcular el peso del vehiculo
+
+        public virtual void PesoVehiculo()
+        {
+
+        }
+
+
 
 
     }
